@@ -1,0 +1,12 @@
+1. Listen to the event of the user by clicking on the submit button.
+
+2. After the user adds an input, we have to get it erased from the input field.
+
+3. we have to store that data in the local storage
+
+4. using JSON transform data from arrays to strings  or strings to arrays
+depending on what we see in the inspect of applications in the navigator
+
+5. get the data from the local storage to being displayed in our UL List
+using the .textContent or .innerHTML, that should also allow to keep the tasks
+added even if we refresh the page.

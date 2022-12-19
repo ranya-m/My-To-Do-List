@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Toast -->
+    <div class="toast hide" id="toast">
+        <div class="toast-header">
+          <h2>WARNING !</h2>
+          <i class="bx bx-x"></i>
+        </div>
+        <div class="toast-body">
+          <p>Veuillez saisir tous les champs necessaires</p>
+        </div>
+      </div>
+    
+<!-- To do list container -->
+<section class="container">
+    <div class="task-header">
+        <h2>To Do List</h2>
+       </div> 
+    
+    
+        <div class="task-body">
+
+         <form>
+            <div class="addTaskBox">
+                <input type="text" name="inputTask" id="inputAddTask"/>
+                <label for="inputTask"></label> 
+                <input type="date" name="inputDate" id="inputAddDate"/>  
+                <label for="inputDate"></label>           
+                <button type="submit" name="addTask" id="btnAddTask" class="btn">Add Task <i class='bx bx-bookmark-plus'></i></button>
+            </div>
+         </form>      
+    
+            <div class="taskListBox">
+                <div class="listHeader">
+                    <div><h4>Task list</h4></div>
+                    <div><h4>Due date</h4></div>
+                    <div><button id="clearAll" class="btn">Clear All <i class='bx bx-trash-alt' ></i></button></div>
+                </div>
+                
+                <ul class="taskList">
+                <!-- <li id="task">
+                   <div id="taskAdded" class="added">Task description here</div>         
+                   <div id="dateAdded" class="added">Due date here</div>         
+                    <div id="clear"><button id="clearTask" class="btn"><i class='bx bx-trash-alt' ></i></button></div>
+                </li> -->
+                </ul>
+            </div>    
+        </div>
+        
+</section>
+
+  
+    <script src="./script.js"></script>
+
+</body>
+</html>
